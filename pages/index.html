@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+<div class="grid-container">
+    <form class="field" id="parent-list">
+        <label for="url_input" class="list-show-html-collection-lis">URL</label>
+        <input type="url" id="url_input">
+        <label for="email_input" class="list-show-html-collection-lis">Email</label>
+        <input name="email_input" type="email" id="email_input" required>
+        <button data-tooltip="I am a tooltip">Submit!</button>    
+    </form>
+    <h2 style="text-align: center;" class="title-lists">We use li:nth-of-type(2) on these lists</h2>
+    <ul class="first-ul">
+        <li>I am an li</li>
+        <li>I am the 2nd li</li>
+        <li>I am the 3rd li</li>
+    </ul>
+    <ul class="second-ul">
+        <li>I am an li</li>
+        <li>I am the 2nd li</li>
+        <li>I am the 3rd li</li>
+    </ul>
+    <ul class="third-ul">
+        <p>I am a p</p>
+        <li>I am an li</li>
+        <li>I am the 2nd li</li>
+    </ul>
+    <ul class="fourth-ul">
+        <p>I am a p</p>
+        <p>I am another p</p>
+        <li>I am an li</li>
+    </ul>
+    <h2 style="text-align: center;" class="title-lists hidden">We use h1:nth-child(2) on these lists</h2>
+    <ul class="first-ul hidden">
+        <h1 style="font-size: 1rem; margin:0;">I am a h1</h1>
+        <h1 style="font-size: 1rem; margin:0;">I am the 2nd h1</h1>
+        <h1 style="font-size: 1rem; margin:0;">I am the 3rd h1</h1>
+    </ul>
+    <ul class="second-ul hidden">
+        <h1 style="font-size: 1rem; margin:0;">I am a h1</h1>
+        <h1 style="font-size: 1rem; margin:0;">I am the 2nd h1</h1>
+        <h1 style="font-size: 1rem; margin:0;">I am the 3rd h1</h1>
+    </ul>
+    <ul class="third-ul hidden">
+        <h2 style="font-size: 1rem; margin:0">I am a h2</h2>
+        <h1 style="font-size: 1rem; margin:0;">I am a h1</h1>
+        <h1 style="font-size: 1rem; margin:0;">I am the 2nd h1</h1>
+    </ul>
+    <ul class="fourth-ul hidden">
+        <h2 style="font-size: 1rem; margin:0">I am a h2</h2>
+        <h2 style="font-size: 1rem; margin:0;">I am another h2</h2>
+        <h1 style="font-size: 1rem; margin:0">I am a h1</h2>
+    </ul>
+    <button value="nth-of-type" class="nth-of-type-b active-button">nth-of-type</button>
+    <button value="nth-child" class="nth-child-b inactive-button">nth-child</button>
+    <div class="box-of-boxes">
+        <div style="background-color: aquamarine;" class="box-floated-left">
+            <p>We've</p>
+        </div>
+        <div style="background-color: lightsalmon;" class="box-floated-left">
+            <p>all</p>
+        </div>
+        <div style="background-color: lightcoral;" class="box-floated-left">
+            <p>been</p>
+        </div>
+        <div style="background-color: khaki;" class="box-floated-left">
+            <p>floated</p>
+        </div>
+        <div style="background-color: violet;" class="box-floated-left">
+            <p>left</p>
+        </div>
+    </div>
+    <div class="box-of-boxes">
+        <div style="background-color: aquamarine;" class="box-floated-right">
+            <p>We've</p>
+        </div>
+        <div style="background-color: lightsalmon;" class="box-floated-right">
+            <p>all</p>
+        </div>
+        <div style="background-color: lightcoral;" class="box-floated-right">
+            <p>been</p>
+        </div>
+        <div style="background-color: khaki;" class="box-floated-right">
+            <p>floated</p>
+        </div>
+        <div style="background-color: violet;" class="box-floated-right">
+            <p>right</p>
+        </div>
+    </div>
+    <div class="first-z-section">
+        <div class="first-z-ex">
+        </div>
+        <div class="third-z-ex">
+            <div class="second-z-ex">
+            </div>
+        </div>
+    </div>
+    <div class="second-z-section">
+        <div class="first-z-ex">
+        </div>
+        <div class="second-z-ex">
+        </div>
+        <div class="third-z-ex">
+        </div>
+    </div>
+</div>
+
+    <script src="../js/eventDelegationList.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+@import "./normalize.scss";
+
+$colorLists: red;
+
+.box-floated-left {
+    float: left;
+    width: 20%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 0.3rem;
+    padding: 0.3rem;
+    background-color: aquamarine;
+
+}
+
+.box-floated-left p {
+    counter-increment: headings;
+}
+
+.box-floated-right {
+    float: right;
+    width: 20%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-floated-right p {
+    counter-increment: headings;
+}
+
+:root {
+    counter-reset: headings;
+}
+
+.box-floated-right p::before {
+    content: counter(headings) ". ";
+}
+
+.box-floated-left p::before {
+    content: counter(headings) ". ";
+}
+
+.box-of-boxes {
+    grid-column: 1 / 3;
+    width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+li:nth-of-type(2) {
+    color: $colorLists;
+}
+
+h1:nth-child(2) {
+  color: $colorLists;
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin: 1px;
+    padding: 1px;
+  }
+
+  
+  input:invalid {
+    background-color: #ffdddd;
+  }
+  
+  form:invalid {
+    border: 5px solid #ffdddd;
+  }
+
+  form {
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 3;
+    margin: 5rem 5rem;
+  }
+
+  .active-button {
+    background-color: purple;
+    color: white;
+  }
+
+  .inactive-button {
+    background-color: lavender;
+  }
+
+  .nth-of-type-b {
+    grid-column: 1 / 2; 
+    margin: 2rem 4rem;
+  }
+
+  .nth-child-b {
+    grid-column: 2 / 3; 
+    margin: 2rem 4rem;
+  }
+  
+  .first-ul {
+    grid-column: 1 / 2;
+    margin: 2rem 4rem; 
+  }
+  .second-ul {
+    grid-column: 2 / 3;
+    margin: 2rem 4rem; 
+  }
+  .third-ul {
+    grid-column: 1 / 2;
+    margin: 2rem 4rem; 
+  }
+  .fourth-ul {
+    grid-column: 2 / 3;
+    margin: 2rem 4rem; 
+  }
+  
+  input:valid {
+    background-color: #ddffdd;
+  }
+  
+  form:valid {
+    border: 5px solid #ddffdd;
+  }
+  
+  input:required {
+    border-color: #800000;
+    border-width: 3px;
+  }
+  
+  input:required:invalid {
+    border-color: #c00000;
+  }
+
+  .first-z-ex {
+    z-index: 2;
+    background-color: lightseagreen;
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    display: inline-block;
+    margin-right: -2rem;
+
+  }
+
+  .second-z-ex {
+    z-index: 1;
+    background-color: lightblue;
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    display: inline-block;
+    margin-right: -5rem;
+  }
+
+  .third-z-ex {
+    z-index: 100;
+    background-color: sandybrown;
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    display: inline-block;
+  }
+
+  .first-z-section {
+    display: inline-block;
+    width: fit-content;
+    margin: 15%;
+  }
+
+  .second-z-section {
+    display: inline-block;
+    width: fit-content;
+    margin: 15%;
+  }
+
+.z-labels {
+  margin-left: 2.5rem;
+}

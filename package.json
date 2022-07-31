@@ -1,0 +1,22 @@
+{
+  "name": "study",
+  "version": "1.0.0",
+  "description": "This repo is mostly just related to concepts that I would like to thoroughly clarify for myself before job interviews.",
+  "main": "bind.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Josephine-Ann/study_notes_js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Josephine-Ann/study_notes_js/issues"
+  },
+  "homepage": "https://github.com/Josephine-Ann/study_notes_js#readme",
+  "devDependencies": {
+    "sass": "^1.54.0"
+  }
+}
